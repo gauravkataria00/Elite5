@@ -3,11 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="../output.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <header>
+  <nav class="flex justify-between py-2 px-3 shadow-black bg-emerald-900 text-amber-50 ">
+    <div class="font-bold text-2xl text-amber-300">
+    <h1><a href="index.html">Elite5</a></h1>
+  </div>
+  <ul class="flex gap-4 font-medium space-x-1">
+    <li class="hover:underline"><a href="about.html">About</a></li>
+    <li class="hover:underline"><a href="Contact.html">Contact</a></li>
+    <li class="hover:underline"><a href="Services.html">Services</a></li>
+    <li class="hover:underline"><a href="Feedback.html">Feedback</a></li>
+  </ul>
+  <div class="flex gap-2">
+    <button class="border border-black rounded-2xl w-20 bg-emerald-500 hover:bg-emerald-200 hover:text-black duration-400"><a href="Login.html">Login</a></button>
+    <button class="border border-black rounded-2xl w-20 bg-emerald-500 hover:bg-emerald-200 hover:text-black duration-400"><a href="SignUp.html">SignUp</a></button>
+  </div>
+</nav>
+</header>
 </body>
 </html>
