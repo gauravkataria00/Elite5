@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../output.css">
+    <title>Document</title>
+</head>
+<body class="flex justify-center items-center h-150 bg-gray-800">
+    <div>
+    <h1 class="flex justify-center text-emerald-500 font-bold text-4xl">Login</h1>
+    <form class="flex justify-start h-65 w-75 border bg-amber-50">
+       <div class="pl-1"> <br>
+        <label for="Email">Email</label><br>
+        <input type="email" class="border w-70">
+        <br><br>
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password" class="border w-70">
+        <input type="checkbox" id="showPassword" class="mr-2">
+        <label for="showPassword" class="text-gray-700 text-sm">Show Password</label>
+    <br><br>
+        <div class="flex justify-start pl-10">
+        <button class="border rounded w-52 bg-emerald-300">Submit</button>
+    </div>
+</div>
+    </form>
+    <div class="flex justify-center">
+    <h1 class="text-amber-50">Not have an account?<a href="SignUp.html" class="underline text-emerald-300">Sign Up Here</a></h1>
+</div>
+</div><script>
+    document.getElementById("showPassword").addEventListener("change", function() {
+        let passwordField = document.getElementById("password");
+        passwordField.type = this.checked ? "text" : "password";
+    });
+</script>
+</body>
+</html>
