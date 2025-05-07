@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 flex items-center justify-center min-h-screen">
+<div>
+    <div>
+    <h2 class="text-2xl text-emerald-500 font-bold mb-6 text-center">Sign Up</h2>
+</div>
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-medium">Full Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-medium">Password:</label>
+                <input type="password" id="password" name="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="confirmPassword" class="block text-gray-700 font-medium">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+
+            <div class="mb-4 flex items-center">
+                <input type="checkbox" id="showPassword" class="mr-2">
+                <label for="showPassword" class="text-gray-700 text-sm">Show Password</label>
+            </div>
+
+            <button type="submit" class="w-full bg-emerald-300 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                Sign Up
+            </button>
+
+            <p class="text-center text-gray-600 text-sm mt-4">
+                Already have an account? <a href="Login.html" class="text-emerald-300 hover:underline">Login</a>
+            </p>
+        </form>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("showPassword").addEventListener("change", function() {
+            let passwordField = document.getElementById("password");
+            let confirmPasswordField = document.getElementById("confirmPassword");
+            let type = this.checked ? "text" : "password";
+            passwordField.type = type;
+            confirmPasswordField.type = type;
+        });
+    </script>
+</body>
+</html>
