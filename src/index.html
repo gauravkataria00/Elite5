@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDUVAULT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+
+  <style>
+    body {
+      background-color: lab(4.12% -1.87 -6.23);
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="relative min-h-screen text-white overflow-auto">
+  <!-- Background Canvas -->
+  <div id="vanta-bg" class="absolute top-0 left-0 w-full h-screen opacity-20 -z-10"></div>
+
+  <!-- Navbar Placeholder -->
+  <div id="content" class="relative z-10">
+    <header id="Navbar"></header>
+    <script src="./js/navbar.js"></script>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="max-w-[90%] mx-auto mt-[100px] mb-[50px] text-center rounded-[50px] p-5 relative z-10">
+    <div class="max-w-xl mx-auto text-center flex flex-col items-center justify-center">
+      <h1 class="font-['Playfair_Display'] font-medium text-[50px] md:text-[30px] mb-5 leading-tight">
+        Show Case Your<br>Education Journey
+      </h1>
+      <p class="mb-8">
+        EduVault connects students, institutions, and opportunities through beautiful
+        digital portfolios that highlight real academic journeys from across India.
+      </p>
+      <a href="cards.html">
+        <button class="bg-[#e7ecf3] bg-opacity-50 text-[rgb(3,3,20)] text-lg px-6 py-3 rounded-md mt-[75px] hover:bg-gray-300 hover:bg-opacity-90 transition-all">
+          Start Exploring <i class="fa-solid fa-arrow-right ml-2"></i>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Vanta JS Background -->
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xffffff,
+      backgroundColor: 0x000000,
+      points: 10.00,
+    });
+  </script>
+
+</body>
+</html>
