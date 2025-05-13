@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio Creation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+     <style>
+       body {
+      background-color: lab(4.12% -1.87 -6.23);
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+ <!-- Navbar Placeholder -->
+  <div id="content" class="relative z-10">
+    <header id="Navbar"></header>
+    <script src="./js/navbar.js"></script>
+  </div>
+    <div id="vanta-bg" class="absolute top-0 left-0 w-full h-screen opacity-20 -z-10"></div>
+<body class=" text-white">
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-semibold mb-6">Create Your Academic Portfolio</h1>
+    <p class="text-gray-400 text-lg mb-6">This platform helps you build a professional portfolio to showcase your academic achievements, projects, and skills.</p>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-3">Why Create a Portfolio?</h2>
+      <ul class="list-disc pl-6">
+        <li>Showcase your academic projects and achievements.</li>
+        <li>Build a strong professional online presence.</li>
+        <li>Keep track of your progress and development.</li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold mb-3">Portfolio Features:</h2>
+      <ul class="list-disc pl-6">
+        <li>Personalized design options.</li>
+        <li>Easy-to-use content editor.</li>
+        <li>Option to add media like images, documents, and videos.</li>
+      </ul>
+    </div>
+
+    <a href="/create-portfolio" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">Start Building Your Portfolio</a>
+  </div>
+   <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xffffff,
+      backgroundColor: 0x000000,
+      points: 10.00,
+    });
+  </script>
+</body>
+</html>
