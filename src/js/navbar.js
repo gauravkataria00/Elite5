@@ -1,10 +1,10 @@
 function Navbar() {
 
     const MENUDATA = [
-        { icons: 'fas fa-home mr-1', name: "Home", link: './src/pages/login.html' },
-        { icons: 'fas fa-folder-open mr-1', name: "Projects", link: './project.html' },
-        { icons: 'fas fa-users mr-1', name: "Students", link: './students.html' },
-        { icons: 'fas fa-info-circle mr-1', name: "About", link: './src/pages/login.html' },
+        { icons: 'fas fa-home mr-1', name: "Home", link: "index.html" },
+        { icons: 'fas fa-folder-open mr-1', name: "Projects", link: "pro.html" },
+        { icons: 'fas fa-users mr-1', name: "Students", link: "cards.html" },
+        { icons: 'fas fa-info-circle mr-1', name: "About", link:"about1.html" },
     ];
 
     const AUTHDATA = [
